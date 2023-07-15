@@ -1,0 +1,96 @@
+
+.app{
+    display: flex;
+}
+
+form{
+    max-width: 400px;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.divForm{
+    width: 785px;
+    height: 100vh;
+    left: 404px;
+    border-radius: 38px;
+}
+
+.side-display{
+    background-color: #7CD2D7;
+}
+
+.side-display .txt{
+    width: 309px;
+    height: 101px;
+    top: 93px;
+    left: 30px;
+}
+
+.side-display p{
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0.04em;
+    text-align: left;
+
+}
+
+/* .side-display img{
+    position: absolute;
+    left: 1.61%;
+    right: 58.37%;
+    top: 31.52%;
+    bottom: -3.23%;
+
+    background: url(Abstraction.png);
+    transform: rotate(-7.15deg);
+} */
+
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input.is-valid{
+    border: 1px solid green;
+    outline: 1px solid green;
+}
+
+input.is-invalid{
+    border: 1px solid red;
+    outline: 1px solid red;
+}
+.errorMsg{
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.btn{
+    width: 30%;
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: green;
+    cursor: pointer;
+}
+
+
