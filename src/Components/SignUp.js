@@ -63,9 +63,9 @@ const SignUp = () =>{
                         id = "email"
                         value={email}
                         onChange = {handleEmailChange}
-                        className = {emailValidated == true ? "is-valid" : "is-invalid"}
+                        className = {emailValidated === true ? "is-valid" : "is-invalid"}
                     />
-                    {emailValidated == true ? null : <div className="errorMsg">Please a valid email</div>}
+                    {emailValidated === true ? null : <div className="errorMsg">Please a valid email</div>}
                 </div>
 
                 <div className="form-group">
@@ -75,9 +75,9 @@ const SignUp = () =>{
                         id = "password"
                         value={password}
                         onChange = {handlePasswordChange}
-                        className = {passwordValidated == true ? "is-valid" : "is-invalid"}
+                        className = {passwordValidated === true ? "is-valid" : "is-invalid"}
                     />
-                    {passwordValidated == true ? null : <div className="errorMsg">Password must be at least at 8 characters long</div>}
+                    {passwordValidated === true ? null : <div className="errorMsg">Password must be at least at 8 characters long</div>}
                 </div>
                 
                 <div className="form-group">
@@ -87,9 +87,9 @@ const SignUp = () =>{
                         id = "confirm-password"
                         value={confirmPassword}
                         onChange = {handleConfirmPasswordChange}
-                        className = {confirmPasswordValidated == true ? "is-valid" : "is-invalid"}
+                        className = {confirmPasswordValidated === true ? "is-valid" : "is-invalid"}
                     />
-                    {confirmPasswordValidated == true ? null : <div className="errorMsg">Password do not match</div>}
+                    {confirmPasswordValidated === true ? null : <div className="errorMsg">Password do not match</div>}
                 </div>
 
                 <button type="submit" className="btn">Submit</button>
