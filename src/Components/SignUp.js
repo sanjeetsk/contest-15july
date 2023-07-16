@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { FcGoogle} from "react-icons/fc";
+import { LiaFacebook } from "react-icons/lia";
 
 const SignUp = () =>{
     const [email , setEmail] = useState('');
@@ -54,8 +56,14 @@ const SignUp = () =>{
     }
 
     return <div className="divForm">
+            
             <form onSubmit = {handleSubmit}>
-
+                <h1>Create Account</h1>
+                <div id="signBtn">
+                    <button className="icon"><FcGoogle size="20px"/> &nbsp;&nbsp;Sign up with Google</button>
+                    <button className="icon"><LiaFacebook size="20px" color="blue"/> &nbsp;&nbsp;Sign up with Facebook</button>
+                </div>
+                <div id="mid">-OR-</div>
                 <div className="form-group">
                     <label htmlFor="email"> Email </label>
                     <input
@@ -92,7 +100,7 @@ const SignUp = () =>{
                     {confirmPasswordValidated === true ? null : <div className="errorMsg">Password do not match</div>}
                 </div>
 
-                <button type="submit" className="btn">Submit</button>
+                <button type="submit" className="btn">Create Account</button>
                 
             </form>
         </div> 

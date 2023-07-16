@@ -1,19 +1,56 @@
-
+*{
+    top: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .app{
+    position: relative;
+}
+
+.side-display{
+    position: absolute;
+    background-color: #ccc;
+    width: 35%;
+    height: 100vh;
+}
+ 
+#signBtn{
     display: flex;
+    justify-content: center;
+    margin: 20px 10px 20px 10px;
+    gap: 10px;
+}
+
+.icon{  
+    width: 200px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    border: none;
+}
+
+#mid{
+    text-align:center ;
+    margin: 10px;
+    font-size: larger;
+}
+
+.divForm{
+    position: absolute;
+    left: 30%;
+    width: 70%;
+    height: 100vh;
+    background-color: #fff;
+    border-radius: 38px;
+    overflow-x: visible;
 }
 
 form{
     max-width: 400px;
     margin: auto;
-    margin-top: 10%;
-}
-
-.divForm{
-    width: 785px;
-    height: 100vh;
-    left: 404px;
-    border-radius: 38px;
+    margin-top: 5%;
 }
 
 .side-display{
@@ -23,8 +60,13 @@ form{
 .side-display .txt{
     width: 309px;
     height: 101px;
-    top: 93px;
-    left: 30px;
+    margin: 30px;
+}
+
+.side-display .txt p{
+    color: #fff;
+    font-weight: 400;
+    font-family: sans-serif;
 }
 
 .side-display p{
@@ -37,16 +79,16 @@ form{
 
 }
 
-/* .side-display img{
+.imag{
     position: absolute;
-    left: 1.61%;
-    right: 58.37%;
-    top: 31.52%;
-    bottom: -3.23%;
-
-    background: url(Abstraction.png);
-    transform: rotate(-7.15deg);
-} */
+    left: -4.39%;
+    right: -50%;
+    top: 14%;
+    bottom: 2%;
+    background: url(Abstraction.png) no-repeat;
+    transform: rotate(-0.15deg);
+    z-index: 2;
+}
 
 
 .form-group{
@@ -81,11 +123,13 @@ input.is-invalid{
 }
 
 .btn{
-    width: 30%;
+    width: 90%;
     font-size: 18px;
     padding: 10px;
+    margin-left: 20px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 9px;
+    background-color: #7CD2D7;
 }
 
 .btn:hover{

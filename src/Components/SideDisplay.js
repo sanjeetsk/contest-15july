@@ -5,6 +5,8 @@ const SideDiaplay = () => (
         <div className="txt">
             <p>Find 3D Objects, Mockups and Ilustration here</p>
         </div>
+        <div className="imag">
+        </div>
 
     </div>
 )
