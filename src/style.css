@@ -29,7 +29,10 @@
     align-items: center;
     border-radius: 9px;
     border: none;
+    background-color: #acecef;
+    cursor: pointer;
 }
+
 
 #mid{
     text-align:center ;
